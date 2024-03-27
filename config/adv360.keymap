@@ -21,6 +21,7 @@
 / {
   behaviors {
     #include "macros.dtsi"
+    #include "version.dtsi"
 
     hm: homerow_mods {
         compatible = "zmk,behavior-hold-tap";
@@ -47,7 +48,7 @@
             >;
         };
 
-        layer_keypad {
+        layer_colemak_dh {
             bindings = <
  &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4  &kp N5              &trans                                                                 &mo 3  &kp N6  &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9   &kp NUMBER_0  &kp MINUS
    &kp TAB      &kp Q     &kp W     &kp F      &kp P   &kp B               &none                                                                 &none   &kp J         &kp L         &kp U             &kp Y  &kp SEMICOLON   &kp BSLH
